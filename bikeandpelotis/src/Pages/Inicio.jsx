@@ -10,7 +10,7 @@ const Inicio = () => {
     useEffect(() => {
         setTimeout(() => {
             navigate('/inscribete')
-        }, 10000)
+        }, 5000)
     }, [])
 
     const heart = new Audio(

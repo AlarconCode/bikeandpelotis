@@ -1,10 +1,11 @@
 .dateRace {
     width: 70%;
-    animation: scale 5s ease-in-out;
+    animation: scaleOpacity 5s ease-in-out;
+    animation: rebote 1s ease infinite 1s;
     cursor: pointer;
 }
 
-@keyframes scale {
+@keyframes scaleOpacity {
     0% {
         width: 10%;
         opacity: 0.1;
@@ -12,5 +13,14 @@
     100% {
         width: 70%;
         opacity: 1;
+    }
+}
+
+@keyframes rebote {
+    0% {
+        width: 65%;
+    }
+    100% {
+        width: 70%;
     }
 }

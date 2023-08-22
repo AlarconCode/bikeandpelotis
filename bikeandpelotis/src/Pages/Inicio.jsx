@@ -23,7 +23,7 @@ const Inicio = () => {
         //         <Logo className='dateRace' src={dateRace} width={300} />
         //     </Link>
         // </div>
-        <div className='container'>
+        <div className='container-image'>
             <Logo className='dateRace' src={dateRace} width={300} />
         </div>
     )

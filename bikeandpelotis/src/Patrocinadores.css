@@ -1,5 +1,5 @@
 .patrocinadores-container {
-    width: 80vw;
+    width: 80%;
     height: 150px;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -12,4 +12,16 @@
 .patrocinadores-container img {
     width: 30%;
     height: 30%;
+}
+
+@media only screen and (min-width: 992px) {
+    .patrocinadores-container {
+        width: 50%;
+        flex-wrap: nowrap;
+    }
+
+    .patrocinadores-container img {
+        width: 40%;
+        height: 40%;
+    }
 }

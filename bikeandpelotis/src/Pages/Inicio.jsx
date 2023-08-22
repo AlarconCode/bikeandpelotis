@@ -1,7 +1,9 @@
-import { Link, useNavigate } from 'react-router-dom'
-import { useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
+import { useEffect, useRef } from 'react'
 import Logo from '../Logo'
 import dateRace from '../assets/17S.svg'
+import ReactPlayer from 'react-player'
+import audioHeart from '../assets/heart-beat.mp3'
 import './Inicio.css'
 
 const Inicio = () => {
@@ -10,22 +12,20 @@ const Inicio = () => {
     useEffect(() => {
         setTimeout(() => {
             navigate('/inscribete')
-        }, 5000)
+        }, 7000)
     }, [])
 
-    const heart = new Audio(
-        'https://upload.wikimedia.org/wikipedia/commons/1/1b/57_BPM_Heart_Sounds.ogg'
-        )
-
     return (
-        // <div className='container'>
-        //     <Link to='/inscribete' className='container'>
-        //         <Logo className='dateRace' src={dateRace} width={300} />
-        //     </Link>
-        // </div>
         <div className='container-image'>
             <div className='container-info'>
                 <Logo className='dateRace' src={dateRace} width={300} />
+                <div className='noMostrar'>
+                <ReactPlayer 
+                    url={audioHeart}
+                    playing={true}
+                    volume={0.6}
+                />
+                </div>
             </div>
         </div>
     )

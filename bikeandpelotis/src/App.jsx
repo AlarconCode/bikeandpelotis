@@ -4,6 +4,8 @@ import Inicio from './Pages/Inicio'
 import Inscribete from './Pages/Inscribete'
 import './App.css'
 
+
+
 function App() {
 
   return (

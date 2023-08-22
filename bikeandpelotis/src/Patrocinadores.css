@@ -18,6 +18,7 @@
     .patrocinadores-container {
         width: 50%;
         flex-wrap: nowrap;
+        gap: 50px;
     }
 
     .patrocinadores-container img {

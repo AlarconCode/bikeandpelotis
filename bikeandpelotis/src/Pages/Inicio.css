@@ -1,26 +1,26 @@
 .dateRace {
-    width: 70%;
+    width: 50%;
     animation: scaleOpacity 5s ease-in-out;
-    animation: rebote 1s ease infinite 1s;
+    animation: rebote 1s ease-in-out infinite;
     cursor: pointer;
 }
 
-@keyframes scaleOpacity {
+/* @keyframes scaleOpacity {
     0% {
-        width: 10%;
+        width: 50%;
         opacity: 0.1;
     }
     100% {
         width: 70%;
         opacity: 1;
     }
-}
+} */
 
 @keyframes rebote {
     0% {
-        width: 65%;
+        width: 50%;
     }
     100% {
-        width: 70%;
+        width: 60%;
     }
 }

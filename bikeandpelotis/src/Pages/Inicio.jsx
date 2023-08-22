@@ -12,12 +12,12 @@ const Inicio = () => {
     useEffect(() => {
         setTimeout(() => {
             navigate('/inscribete')
-        }, 7000)
+        }, 8000)
     }, [])
 
     return (
         <div className='container-image'>
-            <div className='container-info'>
+            <div className='container-info-center'>
                 <Logo className='dateRace' src={dateRace} width={300} />
                 <div className='noMostrar'>
                 <ReactPlayer 

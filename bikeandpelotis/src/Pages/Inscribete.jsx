@@ -16,7 +16,7 @@ const Inscribete = () => {
                 <Logo className='logo-asedio' src={logo_Asedio} />
                 <a 
                     className='inscribete'
-                    href='https://eventos.runrunsports.com/inscripcion/-vi-asedio-a-barcience/  modalidades'
+                    href='https://eventos.runrunsports.com/inscripcion/-vi-asedio-a-barcience/modalidades'
                     >
                     ¡Inscribete Aquí!
                 </a>

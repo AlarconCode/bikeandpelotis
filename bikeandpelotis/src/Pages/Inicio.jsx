@@ -24,7 +24,9 @@ const Inicio = () => {
         //     </Link>
         // </div>
         <div className='container-image'>
-            <Logo className='dateRace' src={dateRace} width={300} />
+            <div className='container-info'>
+                <Logo className='dateRace' src={dateRace} width={300} />
+            </div>
         </div>
     )
 }

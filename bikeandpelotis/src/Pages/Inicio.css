@@ -1,0 +1,16 @@
+.dateRace {
+    width: 70%;
+    animation: scale 5s ease-in-out;
+    cursor: pointer;
+}
+
+@keyframes scale {
+    0% {
+        width: 10%;
+        opacity: 0.1;
+    }
+    100% {
+        width: 70%;
+        opacity: 1;
+    }
+}

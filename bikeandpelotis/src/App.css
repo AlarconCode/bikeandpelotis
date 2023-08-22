@@ -35,8 +35,19 @@
     font-size: 2.5rem;
     text-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
     cursor: pointer;
+    animation: scaleText 1s ease-in-out infinite 100ms;
 }
 
 .inscribete:hover {
-    color: gold !important;
+    color: white !important;
+    text-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes scaleText {
+    0% {
+        font-size: 2.2rem;
+    }
+    100% {
+        font-size: 2.5rem;
+    }
 }

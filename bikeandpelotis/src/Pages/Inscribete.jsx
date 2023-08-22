@@ -15,7 +15,7 @@ const Inscribete = () => {
                 target='_blank'
                 type='link'
             >
-                Inscribete Aquí
+                ¡Inscribete Aquí!
             </Button>
             <Patrocinadores />
         </div>

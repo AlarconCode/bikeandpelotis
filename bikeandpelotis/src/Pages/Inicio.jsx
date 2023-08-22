@@ -6,7 +6,7 @@ import './Inicio.css'
 const Inicio = () => {
     return (
         <div className='container'>
-            <Link to='/inscribete'>
+            <Link to='/inscribete' className='container'>
                 <Logo className='dateRace' src={dateRace} width={300} />
             </Link>
         </div>

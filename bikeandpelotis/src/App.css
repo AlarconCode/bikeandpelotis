@@ -81,6 +81,16 @@
         height: 100vh;
     }
 
+    .container-info-center {
+        background-image: url(./assets/Caballero-Fondo.jpg);
+        background-color: black;
+        background-size: cover;
+        justify-content: center;
+        row-gap: 6rem;
+        width: 100vw;
+        height: 100vh;
+    }
+
     .logo-ayto {
         width: 30%;
     }

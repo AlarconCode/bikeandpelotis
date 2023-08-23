@@ -1,5 +1,5 @@
-import Logo from '../Logo'
-import Patrocinadores from '../Patrocinadores'
+import Logo from '../Components/Logo'
+import Patrocinadores from '../Components/Patrocinadores'
 import logo_Ayto from '../assets/Logo-AytoBarcience-blanco.svg'
 import logo_Asedio_twoLines from '../assets/Logo-Asedio-twoLines.svg'
 import logo_Asedio_oneLine from '../assets/Logo-Asedio-oneLine.svg'

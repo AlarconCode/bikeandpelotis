@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom'
 import { useEffect, useRef } from 'react'
-import Logo from '../Logo'
+import Logo from '../Components/Logo'
 import dateRace from '../assets/17S.svg'
 import ReactPlayer from 'react-player'
 import audioHeart from '../assets/heart-beat.mp3'

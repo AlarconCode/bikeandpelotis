@@ -1,5 +1,6 @@
 header {
     position: fixed;
+    top: 0;
     width: 100vw;
     height: 10vh;
     background-color: black;
@@ -67,23 +68,26 @@ a:active {
     header {
         padding: 0 100px;
     }
-
+    
     .logo-ByP-header {
         width: 12vw;
     }
-
+    
     .icon-menu-header-container {
         display: none;
     }
-
+    
     .menu-items-container {
-        position: inherit;
+        position: fixed;
+        top:0;
         height: 10vh;
         background-color: transparent;
+        width: 100vw;
     }
 
     .list-items {
         flex-direction: row;
         justify-content: end;
+        margin: 0 10vh;
     }
 }

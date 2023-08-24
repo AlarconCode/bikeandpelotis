@@ -8,8 +8,8 @@ function Header() {
     const [isOpen, setIsOpen] = useState(false)
     const handleToggle = () => setIsOpen(!isOpen)
     const iconMenu = isOpen ? <MdClose className='icon-menu-header'/> : <MdMenu className='icon-menu-header'/>
-    const width = isOpen ? 100 : 0
-
+    const width = isOpen && screen.width < 992 ? 100 : 0
+    console.log(screen.width);
     return (
         <header>
             <img className='logo-ByP-header' src={logo_ByP} />

@@ -9,16 +9,22 @@ import './Inicio.css'
 const Inicio = () => {
     const navigate = useNavigate()
 
-    useEffect(() => {
-        setTimeout(() => {
-            navigate('/asedio')
-        }, 8000)
-    }, [])
+    // useEffect(() => {
+    //     setTimeout(() => {
+    //         navigate('/asedio')
+    //     }, 8000)
+    // }, [])
 
     return (
         <div className='container-image'>
             <div className='container-info-center'>
                 <Logo className='dateRace' src={dateRace} width={300} />
+                <a 
+                    className='inscribete'
+                    href='https://eventos.runrunsports.com/inscripcion/-vi-asedio-a-barcience/modalidades'
+                    >
+                    ¡Inscribete Aquí!
+                </a>
                 <div className='noMostrar'>
                 <ReactPlayer 
                     url={audioHeart}

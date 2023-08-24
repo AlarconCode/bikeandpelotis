@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.container-margin-top-header {
+    margin-top: 10vh;
+}
+
 .noMostrar {
     display: none;
 }
@@ -13,14 +17,12 @@
     background-size: cover;
     background-repeat: no-repeat;
     width: 100vw;
-    height: 100vh;
+    min-height: 90vh;
     display: flex;
     flex-direction: column;
     row-gap: 3rem;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    margin: 0;
-    padding: 0;
 }
 
 .container-info-center {
@@ -28,19 +30,16 @@
     background-size: cover;
     background-repeat: no-repeat;
     width: 100vw;
-    height: 100vh;
+    min-height: 90vh;
     display: flex;
     flex-direction: column;
     row-gap: 3rem;
     justify-content: center;
     align-items: center;
-    margin: 0;
-    padding: 0;
 }
 
 .logo-ayto{
     width: 70%;
-    margin-top: 30px;
 }
 
 .logo-asedio {

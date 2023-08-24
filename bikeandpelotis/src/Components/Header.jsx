@@ -9,12 +9,13 @@ function Header() {
     const handleToggle = () => setIsOpen(!isOpen)
     const iconMenu = isOpen ? <MdClose className='icon-menu-header'/> : <MdMenu className='icon-menu-header'/>
     const positionContainer = isOpen ? 0 : 100
-    
+    const display = isOpen ? 'block' : 'none'
+
     return (
         <header>
             <img className='logo-ByP-header' src={logo_ByP} />
             <div className='icon-menu-header-container' onClick={handleToggle}>{iconMenu}</div>
-            <div className='menu-items-container' style={{left:`${positionContainer}vh`}}>
+            <div className='menu-items-container' style={{left:`${positionContainer}vh`, display: `${display}`}}>
                 <ul className='list-items'>
                     <li className='menu-item'onClick={handleToggle} ><Link to='/'>Inicio</Link></li>
                     <li className='menu-item'onClick={handleToggle}><Link to='/asedio'>Asedio'23</Link></li>

@@ -8,8 +8,6 @@ function Header() {
     const [isOpen, setIsOpen] = useState(false)
     const handleToggle = () => setIsOpen(!isOpen)
     const iconMenu = isOpen ? <MdClose className='icon-menu-header'/> : <MdMenu className='icon-menu-header'/>
-    // const positionContainer = isOpen ? 0 : 100
-    // const display = positionContainer === 0 ? 'block' : 'none'
     const width = isOpen ? 100 : 0
 
     return (

@@ -1,10 +1,8 @@
 import { useNavigate } from 'react-router-dom'
 import { useEffect, useRef } from 'react'
 import Logo from '../Components/Logo'
-import dateRace from '../assets/17S.svg'
-import ReactPlayer from 'react-player'
-import audioHeart from '../assets/heart-beat.mp3'
-import './Inicio.css'
+import { FaFacebook, FaInstagram } from "react-icons/fa6";
+import logo_Asedio from '../assets/Logo-Asedio-twoLines.svg'
 
 const Inicio = () => {
     const navigate = useNavigate()
@@ -16,21 +14,20 @@ const Inicio = () => {
     // }, [])
 
     return (
-        <div className='container-image'>
-            <div className='container-info-center'>
-                <Logo className='dateRace' src={dateRace} width={300} />
+        <div className='container-inicio'>
+            <div className='container-info-inicio'>
+                <Logo className='logo-asedio' src={logo_Asedio} />
                 <a 
                     className='inscribete'
                     href='https://eventos.runrunsports.com/inscripcion/-vi-asedio-a-barcience/modalidades'
-                    >
+                    target ='_blank'
+                >
                     ¡Inscribete Aquí!
                 </a>
-                <div className='noMostrar'>
-                <ReactPlayer 
-                    url={audioHeart}
-                    playing={true}
-                    volume={0.6}
-                />
+                <div>
+                <h1>Síguenos en</h1>
+                <a href='https://www.facebook.com/Bikepelotis' target='_blank'><p><FaFacebook /> Bike&Pelotis</p></a>
+                <a href='https://www.instagram.com/bike_and_pelotis/' target='_blank'><p><FaInstagram /> bike_and_pelotis</p></a>
                 </div>
             </div>
         </div>

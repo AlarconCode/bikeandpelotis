@@ -17,6 +17,15 @@ function Header() {
             <div className='icon-menu-header-container' onClick={handleToggle}>{iconMenu}</div>
             <div className='menu-items-container' style={{width: `${width}vw`}}>
                 <ul className='list-items'>
+                    <li className='menu-item'onClick={toggleFalse}>
+                        <a 
+                            className='inscribete'
+                            href='https://eventos.runrunsports.com/inscripcion/-vi-asedio-a-barcience/modalidades'
+                            target ='_blank'
+                        >
+                            ¡Inscribete Aquí!
+                        </a>
+                    </li>
                     <li className='menu-item'onClick={toggleFalse}><Link to='/'>Inicio</Link></li>
                     <li className='menu-item'onClick={toggleFalse}><Link to='/asedio'>Asedio'23</Link></li>
                     <li className='menu-item'onClick={toggleFalse}><Link to='/4millas'>4Millas'23</Link></li>

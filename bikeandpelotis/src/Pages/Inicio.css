@@ -1,7 +1,7 @@
 .dateRace {
     width: 50%;
-    animation: scaleOpacity 5s ease-in-out;
-    animation: rebote 1s ease-in-out infinite;
+    /* animation: scaleOpacity 5s ease-in-out;
+    animation: rebote 1s ease-in-out infinite; */
     cursor: pointer;
 }
 

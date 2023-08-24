@@ -12,30 +12,43 @@
     display: none;
 }
 
-.container-info {
+
+.container-asedio, .container-inicio {
     background-image: url(./assets/Caballero-Fondo1920x1080.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100vw;
     min-height: 90vh;
-    display: flex;
-    flex-direction: column;
-    row-gap: 3rem;
-    justify-content: center;
-    align-items: center;
+    padding: 2rem 0;
 }
 
-.container-info-center {
-    background-image: url(./assets/Caballero-Fondo1920x1080.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100vw;
+.container-info-inicio h1 {
+    font-family: 'New Rocker', cursive;
+    color: gold;
+}
+
+.container-info-inicio {
+    font-weight: 700;
+    width: 95vw;
     min-height: 90vh;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    row-gap: 3rem;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.container-info-asedio {
+    width: 95vw;
+    min-height: 90vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 3rem;
 }
 
 .logo-ayto{
@@ -49,67 +62,48 @@
 
 .inscribete {
     text-decoration: none;
-    color: white;
+    color: gold;
     font-family: 'New Rocker', cursive;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     text-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    animation: scaleText 1s ease infinite;
 }
 
-@keyframes scaleText {
-    0% {
-        font-size: 2.5rem;
-        color: gold;
-    }
-    100% {
-        font-size: 2.6rem;
-        color: goldenrod;
-    }
+.inscribete:hover {
+    color: gold;
+}
+
+.container-4millas {
+    background-color: white;
+    width: 100vw;
+    min-height: 90vh;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 4rem;
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    .container-info {
+    .container-asedio, .container-inicio {
         background-image: url(./assets/Caballero-Fondo.jpg);
-        background-color: black;
-        background-size: cover;
-        justify-content: space-around;
-        row-gap: 6rem;
-        width: 100vw;
-        height: 100vh;
     }
 
-    .container-info-center {
-        background-image: url(./assets/Caballero-Fondo.jpg);
-        background-color: black;
-        background-size: cover;
-        justify-content: center;
-        row-gap: 6rem;
-        width: 100vw;
-        height: 100vh;
+    .container-info-inicio {
+        width: 30vw;
     }
 
-    .logo-ayto {
-        width: 30%;
-    }
-
-    .logo-asedio {
-        width: 50%;
+    .container-info-asedio {
+        width: 30vw;
     }
 
     .inscribete {
-        font-size: 4rem;
+        font-size: 1.5rem;
     }
 
-    @keyframes scaleText {
-        0% {
-            font-size: 4rem;
-            color: gold;
-        }
-        100% {
-            font-size: 4.2rem;
-            color: goldenrod;
-        }
+    .container-4millas {
+        width: 50vw;
+        margin: 0 auto;
     }
 }

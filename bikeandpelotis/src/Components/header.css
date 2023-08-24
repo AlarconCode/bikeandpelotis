@@ -8,6 +8,7 @@ header {
     align-items: center;
     padding: 0 30px;
     border-bottom: 1px solid grey;
+    z-index: 1;
 }
 
 .logo-ByP-header {
@@ -29,12 +30,12 @@ header {
 .menu-items-container {
     position: absolute;
     top: 10vh;
+    right: 0;
     background-color: black;
-    width: 100%;
     height: 90vh;
     opacity: .9;
-    z-index: 1;
-    transition: left 800ms ease;
+    transition: width 800ms ease;
+    overflow: none;
 }
 
 .list-items {
@@ -49,7 +50,7 @@ header {
 .menu-item {
     cursor: pointer;
     font-size: 1.5em;
-    text-decoration: none;
+    align-self: flex-start;
 }
 
 a:link, a:visited {

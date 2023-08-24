@@ -14,11 +14,13 @@ function App() {
   return (
     <>
       <Header />
-      <Routes>
+     <div className='container-margin-top-header'>
+       <Routes>
         <Route path='/' element={ <Inicio /> }></Route>
         <Route path='/asedio' element={ <Asedio /> }></Route>
         <Route path='/4millas' element={ <FourMiles /> }></Route>
       </Routes>
+     </div>
     </>
   )
 }

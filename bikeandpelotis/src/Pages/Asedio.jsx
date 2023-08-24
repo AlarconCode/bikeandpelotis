@@ -12,12 +12,6 @@ const Asedio = () => {
             <div className='container-info'>
                 <Logo className='logo-ayto' src={logo_Ayto} />
                 <Logo className='logo-asedio' src={logo_Asedio} />
-                <a 
-                    className='inscribete'
-                    href='https://eventos.runrunsports.com/inscripcion/-vi-asedio-a-barcience/modalidades'
-                    >
-                    ¡Inscribete Aquí!
-                </a>
                 <Patrocinadores />
             </div>
         </div>

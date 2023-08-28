@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import logo_ByP from '../assets/logo-bikeandpelotis.svg'
 import './header.css'
 import { MdClose, MdMenu } from 'react-icons/md'
@@ -9,15 +9,19 @@ function Header() {
     const handleToggle = () => setIsOpen(!isOpen)
     const toggleFalse = () => setIsOpen(false)
     const iconMenu = isOpen ? <MdClose className='icon-menu-header'/> : <MdMenu className='icon-menu-header'/>
-    const width = isOpen || screen.width > 992 ? 100 : 0
+
+    useEffect(() => {
+        const div = document.getElementById('menu-movil-container')
+        div.style.width = isOpen || screen.width > 992  ? `100vw` : '0'
+    },[isOpen])
 
     return (
         <header>
-            <Link to='/' onClick={toggleFalse}><img className='logo-ByP-header' src={logo_ByP} /></Link>            
+            <Link to='/'><img className='logo-ByP-header' src={logo_ByP}/></Link>            
             <div className='icon-menu-header-container' onClick={handleToggle}>{iconMenu}</div>
-            <div className='menu-items-container' style={{width: `${width}vw`}}>
+            <div className='menu-items-container' id='menu-movil-container'>
                 <ul className='list-items'>
-                    <li className='menu-item'onClick={toggleFalse}>
+                    <li className='menu-item'onClick={handleToggle}>
                         <a 
                             className='inscribete'
                             href='https://eventos.runrunsports.com/inscripcion/-vi-asedio-a-barcience/modalidades'

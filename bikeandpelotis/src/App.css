@@ -28,7 +28,6 @@
 }
 
 .container-info-inicio {
-    font-weight: 700;
     width: 95vw;
     min-height: 90vh;
     margin: 0 auto;
@@ -37,7 +36,7 @@
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    font-size: 1.5rem;
+    row-gap: 3rem;
 }
 
 .container-info-asedio {
@@ -48,16 +47,20 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    text-align: center;
     row-gap: 3rem;
 }
 
-.logo-ayto{
+.logo-ayto {
     width: 70%;
+    max-width: 300px;
 }
 
 .logo-asedio {
     width: 70%;
-    filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.2)); 
+    max-width: 400px;
+    filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.2));
+    margin-bottom: 2rem;
 }
 
 .inscribete {
@@ -84,6 +87,35 @@
     row-gap: 4rem;
 }
 
+/* CountDownTimer */
+
+.show-counter {
+    padding: .5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 1rem;
+    text-align: center;
+  }
+  
+  .show-counter .inscribete {
+      flex: 0 0 100%;
+  }
+  
+  .show-counter .countDown {
+    line-height: 1.25rem;
+    padding: 0 0.75rem 0 0.75rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .countDown p, p {
+      line-height: 2rem;
+      font-size: 2rem;
+      font-weight: 700;
+  }
+
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     .container-asedio, .container-inicio {
@@ -91,19 +123,55 @@
     }
 
     .container-info-inicio {
-        width: 30vw;
+        width: 80vw;
     }
 
     .container-info-asedio {
-        width: 30vw;
+        width: 80vw;
+    }
+
+    .logo-asedio {
+        margin-bottom: 4rem;
+    }
+
+    .container-info-inicio .inscribete {
+        font-size: 2.5rem;
     }
 
     .inscribete {
-        font-size: 1.5rem;
+        font-size: 2.5rem;
     }
 
     .container-4millas {
         width: 50vw;
         margin: 0 auto;
     }
+
+    .containerRRSS {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .containerRRSS h1 {
+        font-size: 2rem;
+        margin-right: 2rem;
+    }
+
+    .containerRRSS a {
+        font-size: 1.3rem;
+        margin-right: 2rem;
+    }
+
+    .countDown p {
+        line-height: 5rem;
+        font-size: 5rem;
+        font-weight: 600;
+    }
+
+    .countDown ~ p  {
+        line-height: 5rem;
+        font-size: 5rem;
+    }
+
 }

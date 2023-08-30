@@ -20,13 +20,11 @@ function Header() {
             <Link to='/'><img className='logo-ByP-header' src={logo_ByP}/></Link>                     
             <div className='icon-menu-header-container' onClick={handleToggle}>{iconMenu}</div>
             <div className='menu-items-container' id='menu-movil-container'>
-                <div className='menu-items-container'>
-                    <ul className='list-items'>
-                        <li className='menu-item'onClick={toggleFalse}><Link to='/'>Inicio</Link></li>
-                        <li className='menu-item'onClick={toggleFalse}><Link to='/asedio'>Asedio&apos;23</Link></li>
-                        <li className='menu-item'onClick={toggleFalse}><Link to='/4millas'>4Millas&apos;23</Link></li>
-                    </ul> 
-                </div>
+                <ul className='list-items'>
+                    <li className='menu-item'onClick={toggleFalse}><Link to='/'>Inicio</Link></li>
+                    <li className='menu-item'onClick={toggleFalse}><Link to='/asedio'>Asedio&apos;23</Link></li>
+                    <li className='menu-item'onClick={toggleFalse}><Link to='/4millas'>4Millas&apos;23</Link></li>
+                </ul> 
             </div>
         </header>
     )

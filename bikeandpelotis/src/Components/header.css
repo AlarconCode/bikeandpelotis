@@ -65,10 +65,6 @@ a:active {
 
 @media only screen and (min-width: 992px) {
 
-    header {
-        padding: 0 100px;
-    }
-    
     .logo-ByP-header {
         width: 12vw;
     }
@@ -78,16 +74,17 @@ a:active {
     }
     
     .menu-items-container {
-        position: fixed;
-        top:0;
+        position: static;
+        display: flex;
+        justify-content: end;
+        align-items: center;
         height: 10vh;
-        background-color: transparent;
-        width: 100vw;
     }
 
     .list-items {
         flex-direction: row;
         justify-content: end;
+        padding: 0;
         margin: 0 10vh;
     }
 }

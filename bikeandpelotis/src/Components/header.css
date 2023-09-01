@@ -3,14 +3,13 @@ header {
     top: 0;
     left: 0;
     width: 100vw;
-    height: 10vh;
+    height: 12vh;
     background-color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 30px;
     z-index: 1;
-    transition: 'transform 0.5s ease-in-out'
 }
 
 .logo-ByP-header {
@@ -37,7 +36,6 @@ header {
     right: 0;
     background-color: black;
     height: 90vh;
-    width: 100%;
     opacity: .9;
     transition: width 800ms ease;
 }
@@ -68,7 +66,8 @@ a:active {
 @media only screen and (min-width: 992px) {
 
     .logo-ByP-header {
-        width: 12vw;
+        width: 15vw;
+        margin-left: 3vw;
     }
     
     .icon-menu-header-container {
@@ -87,6 +86,6 @@ a:active {
         flex-direction: row;
         justify-content: end;
         padding: 0;
-        margin: 0 10vh;
+        margin: 0 5vw;
     }
 }

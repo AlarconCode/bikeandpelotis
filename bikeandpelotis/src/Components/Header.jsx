@@ -18,10 +18,11 @@ function Header() {
         div.style.width = isOpen || screen.width > 992  ? `100vw` : '0'
     },[isOpen])
 
-    const hide = isVisible ? 'translateY(0)' : 'translateY(-100%)'
-
     return (
-        <header style={{transform: hide}}>
+        <header style={{
+            transform: isVisible ? 'translateY(0)' : 'translateY(-100%)',
+            transition: 'transform 0.5s ease-in-out'
+            }}>
             <Link to='/'><img className='logo-ByP-header' src={logo_ByP}/></Link>                     
             <div className='icon-menu-header-container' onClick={handleToggle}>{iconMenu}</div>
             <div className='menu-items-container' id='menu-movil-container'>

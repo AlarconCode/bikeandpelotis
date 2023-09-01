@@ -12,25 +12,25 @@ const ShowCounter = ({ days, hours, minutes, seconds }) => {
         ¡Inscribete Aquí!
       </a>
       <DateTimeDisplay
-        value={days}
+        value= {days < 10 ? `0${days}` : days}
         type={'Dias'}
         isDanger={days <= 3}
       />
       <p>:</p>
       <DateTimeDisplay
-        value={hours}
+        value={hours < 10 ? `0${hours}` : hours}
         type={'Horas'}
         isDanger={false}
       />
       <p>:</p>
       <DateTimeDisplay
-        value={minutes}
+        value={minutes < 10 ? `0${minutes}` : minutes}
         type={'Minutos'}
         isDanger={false}
       />
       <p>:</p>
       <DateTimeDisplay
-        value={seconds}
+        value={seconds < 10 ? `0${seconds}` : seconds}
         type={'Segundos'}
         isDanger={false}
       />

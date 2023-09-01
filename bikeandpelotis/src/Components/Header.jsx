@@ -3,20 +3,25 @@ import logo_ByP from '../assets/logo-bikeandpelotis.svg'
 import './header.css'
 import { MdClose, MdMenu } from 'react-icons/md'
 import { Link } from 'react-router-dom'
+import { useHeaderContext } from '../Providers/HeaderProvider'
+
 
 function Header() {
     const [isOpen, setIsOpen] = useState(false)
     const handleToggle = () => setIsOpen(!isOpen)
     const toggleFalse = () => setIsOpen(false)
     const iconMenu = isOpen ? <MdClose className='icon-menu-header'/> : <MdMenu className='icon-menu-header'/>
-
+    const {isVisible} = useHeaderContext()
+    console.log(isVisible);
     useEffect(() => {
         const div = document.getElementById('menu-movil-container')
         div.style.width = isOpen || screen.width > 992  ? `100vw` : '0'
     },[isOpen])
 
+    const hide = isVisible ? 'translateY(0)' : 'translateY(-100%)'
+
     return (
-        <header>
+        <header style={{transform: hide}}>
             <Link to='/'><img className='logo-ByP-header' src={logo_ByP}/></Link>                     
             <div className='icon-menu-header-container' onClick={handleToggle}>{iconMenu}</div>
             <div className='menu-items-container' id='menu-movil-container'>

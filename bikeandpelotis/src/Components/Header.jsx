@@ -27,9 +27,9 @@ function Header() {
             <div className='icon-menu-header-container' onClick={handleToggle}>{iconMenu}</div>
             <div className='menu-items-container' id='menu-movil-container'>
                 <ul className='list-items'>
-                    <li className='menu-item'onClick={toggleFalse}><Link to='/'>Inicio</Link></li>
-                    <li className='menu-item'onClick={toggleFalse}><Link to='/asedio'>Asedio&apos;23</Link></li>
-                    <li className='menu-item'onClick={toggleFalse}><Link to='/4millas'>4Millas&apos;23</Link></li>
+                    <li onClick={toggleFalse}><Link to='/' className='menu-item'>Inicio</Link></li>
+                    <li onClick={toggleFalse}><Link to='/asedio' className='menu-item'>Asedio&apos;23</Link></li>
+                    <li onClick={toggleFalse}><Link to='/4millas'className='menu-item'>4Millas&apos;23</Link></li>
                 </ul> 
             </div>
         </header>

@@ -4,15 +4,6 @@
     box-sizing: border-box;
 }
 
-/* .container-margin-top-header {
-    margin-top: 10vh;
-} */
-
-.noMostrar {
-    display: none;
-}
-
-
 .container-asedio, .container-inicio {
     background-image: url(./assets/Caballero-Fondo1920x1080.jpg);
     background-size: cover;
@@ -46,7 +37,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    row-gap: 5rem;
+    row-gap: 4rem;
 }
 
 .logo-ayto {
@@ -129,7 +120,7 @@
     }
 
     .logo-asedio {
-        margin-bottom: 4rem;
+        margin-bottom: 0rem;
     }
 
     .container-info-inicio .inscribete {

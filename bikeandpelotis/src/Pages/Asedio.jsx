@@ -10,14 +10,12 @@ const Asedio = () => {
     return (
         <div className="container-asedio">
             <div className='container-info-asedio'>
-                <CountDownTimer targetDate={'2023-09-17'} />
-                <div>
-                  <Logo className='logo-asedio' src={logo_Asedio} />
-                  <Logo className='dateRace' src={dateRace} width={300} />
-                </div>
                 <Logo className='logo-ayto' src={logo_Ayto} />
-                <Patrocinadores />
+                <Logo className='logo-asedio' src={logo_Asedio} />
+                <CountDownTimer targetDate={'2023-09-17'} />
+                <Logo className='dateRace' src={dateRace} width={300} />
             </div>
+            <Patrocinadores />
         </div>
     )
 }

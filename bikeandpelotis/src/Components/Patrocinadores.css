@@ -1,12 +1,13 @@
 .patrocinadores-container {
-    width: 80%;
+    width: 100vw;
     height: 150px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: 0 auto;
+    padding: 0 2rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .patrocinadores-container img {
@@ -16,7 +17,8 @@
 
 @media only screen and (min-width: 992px) {
     .patrocinadores-container {
-        width: 50%;
+        width: 100vw;
+        padding: 0 10rem;
         flex-wrap: nowrap;
         gap: 50px;
     }

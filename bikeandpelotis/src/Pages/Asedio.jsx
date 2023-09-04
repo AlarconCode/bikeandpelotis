@@ -8,8 +8,8 @@ import { CountDownTimer } from '../Components/CountDownTimer'
 
 const Asedio = () => {
     return (
-        <div className="container-asedio">
-            <div className='container-info-asedio'>
+        <div className="image-background">
+            <div className='container-info'>
                 <Logo className='logo-ayto' src={logo_Ayto} />
                 <Logo className='logo-asedio' src={logo_Asedio} />
                 <CountDownTimer targetDate={'2023-09-17'} />

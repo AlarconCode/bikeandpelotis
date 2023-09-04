@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.container-asedio, .container-inicio {
+.image-background {
     background-image: url(./assets/Caballero-Fondo1920x1080.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -18,7 +18,7 @@
     color: gold;
 }
 
-.container-info-inicio {
+/* .container-info-inicio {
     width: 95vw;
     min-height: 100vh;
     margin: 10vh auto;
@@ -27,9 +27,9 @@
     align-items: center;
     text-align: center;
     row-gap: 4rem;
-}
+} */
 
-.container-info-asedio {
+.container-info {
     width: 95vw;
     min-height: 100vh;
     margin: 10vh auto;
@@ -107,8 +107,10 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    .container-asedio, .container-inicio {
+    .image-background {
         background-image: url(./assets/Caballero-Fondo.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
     .container-info-inicio {
@@ -123,9 +125,9 @@
         margin-bottom: 0rem;
     }
 
-    .container-info-inicio .inscribete {
+    /* .container-info-inicio .inscribete {
         font-size: 2.5rem;
-    }
+    } */
 
     .inscribete {
         font-size: 2.5rem;
@@ -136,22 +138,7 @@
         margin: 0 auto;
     }
 
-    .containerRRSS {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .containerRRSS h1 {
-        font-size: 2rem;
-        margin-right: 2rem;
-    }
-
-    .containerRRSS a {
-        font-size: 1.3rem;
-        margin-right: 2rem;
-    }
-
+/* Cuenta atras */
     .countDown p {
         line-height: 5rem;
         font-size: 5rem;

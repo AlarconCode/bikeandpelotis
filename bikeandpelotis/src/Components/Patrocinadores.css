@@ -1,4 +1,5 @@
 .patrocinadores-container {
+    flex: auto;
     width: 100vw;
     height: 150px;
     margin: 0 auto;

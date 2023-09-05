@@ -5,39 +5,34 @@
 }
 
 .image-background {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     background-image: url(./assets/Caballero-Fondo1920x1080.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
-    width: 100vw;
-    min-height: 100vh;
-    padding: 2rem 0;
+    background-position-x: 50%;
+    row-gap: 4rem;
+    padding-bottom: 2rem;
 }
 
-.container-info-inicio h1 {
-    font-family: 'New Rocker', cursive;
-    color: gold;
+.container-info-left {
+    padding-top: 15vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 4rem;
 }
 
-/* .container-info-inicio {
-    width: 95vw;
-    min-height: 100vh;
-    margin: 10vh auto;
+.container-info-right {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
     row-gap: 4rem;
-} */
+}
 
-.container-info {
-    width: 95vw;
-    min-height: 100vh;
-    margin: 10vh auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    row-gap: 4rem;
+.container-info-right img {
+    width: 70vw;
+    filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.2));
 }
 
 .logo-ayto {
@@ -49,15 +44,14 @@
     width: 70%;
     max-width: 400px;
     filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.2));
-    margin-bottom: 2rem;
 }
 
 .inscribete {
     text-decoration: none;
     color: gold;
     font-family: 'New Rocker', cursive;
-    font-size: 1.5rem;
-    text-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.1);
+    font-size: 2rem;
+    text-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.5);
     cursor: pointer;
 }
 
@@ -105,24 +99,63 @@
       font-weight: 700;
   }
 
+/* slider start */
+
+  .slider {
+    width: 100vw;
+    border-top: 5px solid goldenrod;
+  }
+
+.slider figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.slider img {
+    width: 70%;
+    border-radius: 20px;
+    border: 4px solid goldenrod;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.2);
+  }
+
+/* slider end */
+
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     .image-background {
+        padding: 4rem;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
         background-image: url(./assets/Caballero-Fondo.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
     }
 
-    .container-info-inicio {
-        width: 80vw;
+    .container-info-left {
+        flex: 50%;        
     }
-
-    .container-info-asedio {
-        width: 80vw;
+    
+    .container-info-right {
+        padding-top: 15vh;
+        flex: 50%;
+        align-items: center;
+    }
+    
+    .container-info-right img {
+        width: 60%;
+        align-self: flex-end;
+    }
+    
+    .logo-ayto {
+        width: 100%;
+        max-width: 400px;
+        flex: 100%;
     }
 
     .logo-asedio {
-        margin-bottom: 0rem;
+        width: 100%;
+        max-width: 400px;
     }
 
     /* .container-info-inicio .inscribete {
@@ -150,4 +183,13 @@
         font-size: 5rem;
     }
 
+    .slider figure {
+        padding: 5rem;
+    }
+
+    .slider img {
+        width: 30%;
+    }
+
 }
+/* Large devices (laptops/desktops, 992px and up)  END */

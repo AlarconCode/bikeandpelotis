@@ -17,7 +17,7 @@ function App() {
         <HeaderProvider>
           <Header />
            <Routes>
-            <Route path='/' element={ <Inicio /> }></Route>
+            <Route path='/' element={ <Asedio /> }></Route>
             <Route path='/asedio' element={ <Asedio /> }></Route>
             <Route path='/4millas' element={ <FourMiles /> }></Route>
           </Routes>

@@ -1,19 +1,18 @@
 .patrocinadores-container {
-    flex: auto;
     width: 100vw;
-    height: 150px;
-    margin: 0 auto;
-    padding: 0 2rem;
+    height: 25vh;
+    padding: 0 4rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    background-color: black;
+    column-gap: 1.2rem;
 }
 
 .patrocinadores-container img {
-    width: 30%;
-    height: 30%;
+    width: 25%;
+    height: 25%;
 }
 
 @media only screen and (min-width: 992px) {

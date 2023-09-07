@@ -7,6 +7,7 @@ import Hora_Ruta from '../assets/RutasKm-Horatio.svg'
 import './Inicio.css'
 import { CountDownTimer } from '../Components/CountDownTimer'
 import camiseta from '../assets/img/camiseta-asedio-2023.jpg'
+import Slider  from '../Components/Carousel/Slider'
 
 const Asedio = () => {
     return (
@@ -21,13 +22,8 @@ const Asedio = () => {
                     <Logo className='dateRace' src={dateRace} />
                     <img src={Hora_Ruta} alt=''/>
                 </div>
-                <Patrocinadores />
             </div>
-            <div className='slider'>
-                <figure>
-                    <img src={camiseta} alt="camiseta carrera MTB asedio a barcience 2023" />
-                </figure>
-            </div>
+            <Slider />
         </>
     )
 }

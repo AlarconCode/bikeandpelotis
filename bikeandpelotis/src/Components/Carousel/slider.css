@@ -49,6 +49,10 @@
   
   }
 
+  .slides {
+    height: 70vh;
+  }
+
   .slide-image {
     width: 50%;
     position: absolute;

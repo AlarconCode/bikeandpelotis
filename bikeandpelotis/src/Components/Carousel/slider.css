@@ -5,7 +5,7 @@
 }
 
 :root {
-  --heights: 50vh;
+  --heights: 60vh;
   --widths: 100%;
 }
 
@@ -38,14 +38,14 @@
 }
 
 .slide-image {
-  width: 80%;
-  height: fit-content;
-  position: absolute;
+  width: 40%;
 }
 
 @media only screen and (min-width: 515px) {
+
   .slide-image {
-    width: fit-content;
-    height: 100%;
+    width: 40%;
+    
   }
+
 }
